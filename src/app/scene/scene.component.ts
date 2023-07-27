@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'app-scene',
     template: `
-        <p>El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial</p>
+        <p *ngFor="let phrase of phrases">{{ phrase }}</p>
     `,
     styleUrls: ['./scene.component.scss']
 })
 export class SceneComponent {
+    @Input() phrases: string[] = [];
 
 }

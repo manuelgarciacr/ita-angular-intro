@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
     selector: 'app-root',
     template: `
         <div class="container-fluid">
-            <app-home class="row p-2 vh-100"/>
+            <app-home class="row vh-100"/>
         </div>
     `,
     styleUrls: ['./app.component.scss']

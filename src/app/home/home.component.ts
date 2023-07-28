@@ -1,6 +1,11 @@
 import { Component } from '@angular/core';
 import * as phrasesJSON from'../../assets/phrases.json';
 
+export interface Scene {
+    readonly txt: string;
+    readonly img: string;
+}
+
 @Component({
     selector: 'app-home',
     template: `
@@ -15,7 +20,7 @@ import * as phrasesJSON from'../../assets/phrases.json';
 })
 export class HomeComponent {
     protected started = false;
-    protected phrasesArr: string[] = [];
+    protected phrasesArr: Scene[] = [];
 
     constructor() {
         this.phrasesArr = Array.from(phrasesJSON);

@@ -9,7 +9,7 @@ import * as phrasesJSON from'../../assets/phrases.json';
     styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-   protected phrasesArr: string[];
+    protected phrasesArr: string[] = [];
 
     constructor() {
         this.phrasesArr = Array.from(phrasesJSON);
